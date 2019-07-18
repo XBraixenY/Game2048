@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#005748</color>
+    <color name="colorAccent">#5F1919</color>
+    <color name="colorGris">#585C58</color>
+    <color name="colorNegro">#000000</color>
+    <color name="AzulNeon">#4deeea</color>
+    <color name="neon2">#74ee15</color>
+    <color name="neon3">#ffe700</color>
+    <color name="neon4">#f000ff</color>
+    <color name="neon5">#001eff</color>
+    <color name="Blanco">#FFFFFF</color>
+</resources>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/colorNegro">
+
+
+ <TextView
+     android:id="@+id/txt_high_score"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="8dp"
+     android:layout_marginBottom="8dp"
+     android:text="High Score: "
+     android:textSize="35dp"
+     android:gravity="center"
+     android:textStyle="bold"
+     android:textColor="@color/Blanco"
+     android:fontFamily="serif-monospace"
+     app:layout_constraintTop_toTopOf="parent"
+     />
+
+
+    <TextView
+        android:id="@+id/txt_title_2"
+        android:layout_width="71dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="serif-monospace"
+
+
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/AzulNeon"
+        android:textSize="85dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txt_title_4"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="@+id/img_left_alien"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="68dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/neon3"
+        android:textSize="85dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/abc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/text2048"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="@color/neon2"
+        android:textSize="85dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        app:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteX="1dp" />
+
+
+    <TextView
+        android:id="@+id/txt_title_4"
+        android:layout_width="62dp"
+        android:layout_height="108dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="8"
+        android:textColor="@color/neon4"
+        android:textSize="85dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintStart_toStartOf="@+id/text2048"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <TextView
+        android:id="@+id/txt_title_sign"
+        android:layout_width="58dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="8dp"
+
+        android:layout_marginBottom="8dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="!"
+        android:textColor="@color/neon5"
+        android:textSize="85dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449" />
+
+    <Button
+        android:id="@+id/BtnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorNegro"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Start Game!"
+        android:textColor="@color/Blanco"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/text2048" />
+
+    <ImageView
+        android:id="@+id/logo_face"
+        android:layout_width="56dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="48dp"
+
+        android:src="@drawable/facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/logo_gear" />
+
+    <ImageView
+        android:id="@+id/lgo_tt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:elevation="5dp"
+        android:src="@drawable/twitter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/logo_face" />}
+
+   <ImageView
+       android:id="@+id/logo_gear"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:elevation="5dp"
+       android:src="@drawable/gear"
+       tools:layout_editor_absoluteX="361dp"
+       tools:layout_editor_absoluteY="681dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       />
+
+    <ImageView
+        android:id="@+id/img_left_alien"
+        android:layout_width="112dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="5dp"
+        android:rotation="315"
+        android:src="@drawable/space_invader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.152" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="112dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="5dp"
+        android:rotation="45"
+        android:src="@drawable/space_invader"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.152" />
+
+   <ImageView
+       android:id="@+id/abc"
+       android:layout_width="198dp"
+       android:layout_height="58dp"
+       android:elevation="5dp"
+       android:src="@drawable/bit"
+       tools:layout_editor_absoluteX="0dp"
+       tools:layout_editor_absoluteY="673dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:fontFamily="serif-monospace"
+       android:text="Designed by: XBraixenY"
+       android:textColor="@color/Blanco"
+       android:textSize="20dp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toTopOf="@id/abc"
+       tools:layout_editor_absoluteX="0dp"
+       app:layout_constraintStart_toStartOf="parent"
+       />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
